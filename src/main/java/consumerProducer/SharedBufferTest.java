@@ -18,7 +18,7 @@ public class SharedBufferTest {
         Buffer sharedLocation = new UnsynchronizedBuffer();
 
         System.out.println("Action\t\tValue\tSum of Produced\tSum of Consumed");
-        System.out.println("------\t\t-----\t---------------\t---------------%n%n");
+        System.out.println("------\t\t-----\t---------------\t---------------\n\n");
 
         // Execute the producer and consumer threads, giving each thread access to the shared buffer.
         executorService.execute(new Producer(sharedLocation));

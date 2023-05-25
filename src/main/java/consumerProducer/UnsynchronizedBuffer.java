@@ -9,7 +9,7 @@ public class UnsynchronizedBuffer implements Buffer {
 
     // Place the value in the buffer.
     public void blockingPut(int value) throws InterruptedException {
-        System.out.printf("Producing value \t%2d\n", value);
+        System.out.printf("Producing value \t%2d", value);
         buffer = value;
     }
 
